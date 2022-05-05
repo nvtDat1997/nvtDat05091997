@@ -1,0 +1,80 @@
+* Dữ liệu đã được sắp xếp:
+    Về thời gian thực hiện thuật toán:
+    Bubble sort > Selection sort > Insertion sort
+
+* Dữ liệu được sắp xếp ngược lại:
+    Về thời gian thực hiện thuật toán:
+    Bubble sort > Selection sort > Insertion sort
+
+*Dữ liệu có xáo trộn ngẫu nhiên:
+    Về thời gian thực hiện thuật toán:
+    Bubble sort > Selection sort > Insertion sort
+
+
+-----------------------------------------------------------------------------
+Về Bubble sort: (https://www.baeldung.com/cs/bubble-sort-time-complexity)
+
+    Một mảng có kích thước n, lần lặp đầu tiên thực hiện (N - 1)so sánh. Lần lặp thứ hai thực hiện các phép
+     (N - 2) so sánh. Theo cách này, tổng số phép so sánh sẽ là:
+
+    (N - 1) + (N - 2) + (N - 3) + ....... + 3 + 2 + 1 = N*(N - 1)/2 = O*(N ^ 2)
+
+    Do đó, trong trường hợp trung bình , độ phức tạp về thời gian của loại bong bóng tiêu chuẩn sẽ là O*(N ^ 2).
+
+    Trường hợp tốt nhất sẽ là khi mảng đầu vào đã được sắp xếp. Trong trường hợp này, ta kiểm tra tất cả
+    N yếu tố để xem có cần hoán đổi hay không. Nếu không có hoán đổi vẫn còn, chúng tôi tiếp tục và hoàn thành
+    N lần lặp lại. Do đó, trong trường hợp tốt nhất , độ phức tạp về thời gian của loại bong bóng tiêu chuẩn sẽ
+     là O*(N ^ 2).
+
+    Trong trường hợp xấu nhất , mảng được sắp xếp lại. Vì vậy, chúng ta cần thực hiện (N - 1) so sánh trong lần lặp
+     đầu tiên, (N - 2)trong lần tương tác thứ hai, v.v. Do đó, mức độ phức tạp thời gian của các loại bong bóng
+     trong trường hợp xấu nhất sẽ là tương tự như trường hợp trung bình và trường hợp tốt nhất: O*(N ^ 2).
+
+     Độ phức tạp về thời gian của việc sắp xếp bong bóng được cải thiện, Nếu mảng đã cho được sắp xếp, ta duyệt
+     qua mảng một lần. Vì vậy, độ phức tạp về thời gian trong trường hợp tốt nhất sẽ là O*(N).
+---------------------------------------------------------------------------
+Về Selection sort: (https://iq.opengenus.org/time-complexity-of-selection-sort/)
+
+    Trường hợp xấu nhất là trường hợp mảng đã được sắp xếp (với một lần hoán đổi) nhưng phần tử nhỏ nhất là
+    phần tử cuối cùng. Ví dụ: nếu số được sắp xếp là a1, a2, ..., aN, thì:
+
+    a2, a3, ..., aN, a1 sẽ là trường hợp xấu nhất cho việc triển khai Sắp xếp Lựa chọn cụ thể, phần tử nhỏ nhất
+     sẽ luôn là phần tử cuối cùng và phần tử được hoán đổi được giữ ở cuối sẽ là phần tử nhỏ thứ hai là phần tử
+      nhỏ nhất của mảng con chưa được sắp xếp mới. Do đó, trường hợp xấu nhất có:
+
+    So sánh: N * (N + 1) / 2
+    N hoán đổi
+    Do đó, độ phức tạp về thời gian là: O*(N ^ 2).
+
+    Trường hợp tốt nhất là trường hợp mảng đã được sắp xếp. Ví dụ: nếu số được sắp xếp là a1, a2, ..., aN, thì:
+
+    a1, a2, a3, ..., aN sẽ là trường hợp tốt nhất cho việc triển khai Sắp xếp Lựa chọn. Đây là trường hợp tốt nhất
+     vì chúng ta có thể tránh được sự hoán đổi ở mỗi bước nhưng thời gian dành để tìm phần tử nhỏ nhất vẫn là O (N).
+      Do đó, trường hợp tốt nhất có:
+            So sánh: N * (N + 1) / 2
+            0 hoán đổi
+            Lưu ý chỉ số lượng hoán đổi đã thay đổi. Do đó, độ phức tạp về thời gian là O*(N ^ 2).
+    Dựa trên trường hợp xấu nhất và trường hợp tốt nhất, chúng ta biết rằng số lượng so sánh sẽ giống nhau cho
+    mọi trường hợp và do đó, đối với trường hợp trung bình, số lượng so sánh sẽ không đổi.
+
+    Số phép so sánh = N * (N + 1) / 2
+
+    Do đó, độ phức tạp về thời gian sẽ là O (N ^ 2).
+---------------------------------------------------------------------------
+Về Insertion sort: (https://www.happycoders.eu/algorithms/insertion-sort/)
+
+    Độ phức tạp thời gian trung bình của Sắp xếp chèn là: O (n²)
+
+    Trong trường hợp xấu nhất, các phần tử được sắp xếp giảm dần ở phần đầu. Do đó, trong mỗi bước, tất cả các
+    phần tử của mảng con đã sắp xếp phải được chuyển sang bên phải để phần tử được sắp xếp - nhỏ hơn tất cả các
+    phần tử đã được sắp xếp trong mỗi bước - có thể được đặt ngay từ đầu.
+    Độ phức tạp thời gian trong trường hợp xấu nhất của Sắp xếp chèn là: O (n²)
+
+    Nếu các phần tử đã xuất hiện theo thứ tự được sắp xếp, thì sẽ có chính xác  một phép so sánh trong vòng lặp
+    bên trong và không có thao tác hoán đổi nào cả.
+
+    Với n phần tử, tức là n-1 bước (vì chúng ta bắt đầu với phần tử thứ hai), do đó chúng ta đi đến n-1 phép toán
+    so sánh. Vì vậy:
+
+    Độ phức tạp thời gian trong trường hợp tốt nhất của Sắp xếp chèn là: O (n)
+

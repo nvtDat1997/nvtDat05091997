@@ -1,0 +1,101 @@
+body{
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    text-align: center; 
+    background-color: #f0f0f0;
+  }
+
+.header{
+    color:blue;
+  }
+
+.twinkling{
+    color: #ee791a;
+}
+
+#table{
+    width: 95%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+tr,th, td{
+    border: 1px solid black;
+  }
+
+button{
+    border-radius: 7px; 
+    background-color: yellow; 
+    font-size:18px;
+    margin-bottom: 7px;
+  }
+
+  #huy{
+      background-color: red;
+      color: yellow;
+  }
+
+  #sapxep{
+      background-color: green;
+      color: white;
+  }
+
+  #xoa{
+      background-color: green; 
+      color: white;
+  }
+
+  #hang{
+      background-color: pink;
+      line-height: 20px;
+      position: relative;
+      top: -2px;
+      border-radius: 7px;
+  }
+
+  .container{
+          width: 25%;
+          height: auto;
+          margin: auto;
+          margin-bottom: 20px;
+      }
+
+  .element{
+      width: 100%;
+      display: flex;
+  }
+
+  .element p{
+      text-align:left;
+      flex: 1;
+  }
+  
+  .element input{
+      height: 25px;
+      align-self: center;
+  }
+
+  @media only screen and (max-width: 1024px) {
+      .container{
+          width: 35vw;
+      }
+  }
+
+  @media only screen and (max-width: 720px) {
+      .container{
+          width: 50vw;
+      }
+  }
+
+  @media only screen and (max-width: 500px) {
+      .container{
+          width: 75vw;
+      }
+  }
+
+  @media only screen and (max-width: 325px) {
+      .container{
+          width: 90vw;
+      }
+  }

@@ -1,0 +1,311 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search{ 
+    background-color: rgba(255, 153, 0, 0.76); 
+    font-size: 32px; text-align: center;
+}
+
+ul li{
+    text-decoration: none;
+}
+
+div #infomation{
+    width: 100%;  
+    padding-top: 10px;
+}
+
+.chiacot{
+    display: flex; 
+    padding-bottom: 8px; 
+    width: 100%; height: auto;
+}
+
+.cot1{
+    width: 30%; 
+    text-align: center; 
+    height: auto;
+}
+
+.cot1 img{
+    width: 90%; 
+    height: auto; 
+    border: 1px solid rgb(255, 0, 76); 
+    border-radius: 4px;
+}
+
+.cot2{
+    width: 65%;
+}
+
+h5 a{
+    font-size: 20px;
+}
+
+h6 i{
+    font-size: 15px;
+}
+
+h5{
+    padding-bottom: 10px;
+}
+
+h6{
+    padding-bottom: 10px;
+}
+
+body{
+    width: 100%; 
+    height: auto;
+}
+
+.keywords{
+    width: 50%; 
+    height: auto; 
+    position: absolute; 
+    top: 20%; left: 30%; 
+    background-color: rgb(238, 152, 120); 
+    opacity: 0;
+}
+
+.keywords .searchform{
+    font-size: 18px; 
+    margin: 20px 10px;
+}
+
+.keywords .searchform .iconx{
+    font-size: small; 
+    float: right;
+}
+
+.keywords .searchform #input{
+    width: 70%;
+}
+
+.hienthi{
+    opacity: 1!important;
+}
+
+.an{
+    opacity: 0.3;
+}
+
+.tintuc {
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
+.tintuc > div{
+    display: flex-block; 
+    width: 100%; 
+    height: auto; 
+    padding-top: 3px; 
+    padding-bottom: 3px;
+}
+
+.tintuc > div > img{
+    width: 28%; 
+    height: auto; 
+    border: 1px solid rgb(255, 0, 76); 
+    border-radius: 4px; 
+    margin-left: 1.8%;
+}
+
+.tintuc > div > div{
+    width: 65%; 
+    height: auto; 
+    float: right; 
+    margin-right: 4%;
+}
+
+.tintuc > div > div > h6{
+    font-size: 15px; 
+    font-style: italic;
+}
+
+@media (max-width: 992px){
+    .search{
+        font-size: 25;
+    }
+
+    h5 a{
+        font-size: 15px;
+    }
+
+    h6 i{
+        font-size: 12px;
+    }
+
+    h5{
+        padding-bottom: 5px;
+    }
+
+    h6{
+        padding-bottom: 5px;
+    }
+
+    .cot2 p{
+        font-size: 12px;
+    }
+
+    .keywords .searchform{
+        font-size: 14px;
+    }
+
+    .keywords .searchform #input{
+        width: 40%;
+    }
+
+    .tintuc > div{
+        padding-top: 7px; 
+        padding-bottom: 7px;
+    }
+
+    .tintuc > div > div > h6{
+        font-size: 10px;
+    }
+
+    .tintuc > div > div > p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px){
+    .search{
+        font-size: 20;
+    }
+
+    h5 a{
+        font-size: 13px;
+    }
+
+    h6 i{
+        font-size: 10px;
+    }
+
+    h5{
+        padding-bottom: 0px;
+    }
+
+    h6{
+        padding-bottom: 0px;
+    }
+
+    .cot2 p{
+        font-size: 12px;
+    }
+
+    .keywords .searchform{
+        font-size: 12px;
+    }
+
+    .keywords .searchform #input{
+        width: 40%;
+    }
+
+    .tintuc > div{
+        padding-top: 0px; 
+        padding-bottom: 0px;
+    }
+
+    .tintuc > div > div > h6{
+        font-size: 10px;
+    }
+
+    .tintuc > div > div{
+        margin-right: 2%;
+    }
+
+    .tintuc > div > img{
+        margin-left: 0.8%;
+    }
+
+    .tintuc > div > div{
+        width: 70%; 
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 600px){
+    .search{
+        font-size: 15;
+    }
+
+    h5 a{
+        font-size: 15px;
+    }
+
+    h6 i{
+        font-size: 12px;
+    }
+
+    .cot2 p{
+        font-size: 13px;
+    }
+
+    .keywords{
+        width: 90%; 
+        top: 10%; 
+        left: 5%;
+    }
+
+    .keywords .searchform{
+        font-size: 10px;
+    }
+
+    .keywords .searchform #input{
+        width: 40%;
+    }
+
+    .tintuc > div{
+        display: block;
+    }
+
+    .tintuc > div > div > h6{
+        font-size: 12px;
+    }
+
+    .tintuc > div > div > p{
+        font-size: 13px;
+    }
+
+    .tintuc > div > img{
+        width: 95%; 
+        margin-left: 2%;
+    }
+
+    .tintuc > div > div{
+        width: 95%; 
+        margin-right: 3%;
+    }
+
+    .chiacot{
+        display: block; 
+        padding-bottom: 8px;
+        width: 100%; 
+        height: auto;
+    }
+
+    .cot1{
+        width: 100%; 
+        text-align: center; 
+        height: auto;
+    }
+
+    .cot1 img{
+        width: 90%; 
+        height: auto;
+    }
+
+    .cot2{
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    .tintuc > div > div > p{
+        padding-bottom: 3.5%;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng điểm học sinh</title>
+    <link rel="stylesheet" href="asm2.css" />
+</head>
+
+<body>
+    <h1 class="header">Class Marksheet</h1>
+
+    <div class="container">
+        <div class="element">
+            <p>Họ tên</p> 
+            <input type="text" id="name">
+        </div>
+        <div class="element">
+            <p>Điểm toán</p> 
+            <input type="number" id="math">
+        </div>
+        <div class="element">
+            <p>Điểm lí</p> 
+            <input type="number" id="physical">
+        </div>
+        <div class="element">
+            <p>Điểm hóa</p> 
+            <input type="number" id="chemistry">
+        </div>
+    </div>
+
+    <button onclick="Name()" id="nhap"><b>Nhập</b></button>
+    <br><br>
+
+    <table id="table">
+        <tr>
+            <th>STT</th>
+            <th style="width:30%">Họ tên</th> 
+            <th style="width:15%">Toán</th>
+            <th style="width:15%">Lí</th>
+            <th style="width:15%">Hóa</th>
+            <th>Trung bình</th>
+        </tr>    
+    </table>
+
+    <br>
+    <button onclick="diemtb()" id="diemtb"><b>Tính điểm trung bình</b></button>
+    <button onclick="hsgioi()" id="hsgioi"><b>Học sinh giỏi</b></button>
+    <button onclick="huy()" id="huy">Hủy</button>
+    <br><br>
+    <button onclick="sapxep()" id="sapxep">Sắp xếp</button>
+    <button onclick="xoa()" id="delete">xóa hàng</button>
+    <input type="number" id="hang">
+
+    <script type="text/javascript"  src="asm2.js"></script>
+</body>
+</html>

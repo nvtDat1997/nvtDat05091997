@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bảng điểm học sinh</title>
+
+    <link rel="stylesheet" href="asm3.css" />
+</head>
+
+<body>
+    <h1 style="padding-bottom: 20px;">Class Marksheet</h1>
+
+    <div class="row" style="text-align: left;">
+        <div class="col-lg-4 col-md-3 col-2"><br></div>
+        <div class="col-lg-2 col-md-4 col-5 canhchinh1">
+            <p>Họ tên</p>
+            <p>Điểm toán</p>
+            <p>Điểm lí</p>
+            <p>Điểm hóa</p>
+        </div>
+
+        <div class="col-lg-6 col-md-5 col-5 canhchinh2" style="margin: 0; padding: 0;">
+            <p><input type="text" id="name"></p>
+            <p><input type="number" id="math"></p>
+            <p><input type="number" id="physical"></p>
+            <p><input type="number" id="chemistry"></p>
+        </div>
+    </div>
+
+    <button id="nhap"><b>Nhập</b></button>
+
+    <br><br>
+
+    <table id="table">
+        <tr>
+            <th>STT</th>
+            <th style="width:30%">Họ tên</th> 
+            <th style="width:15%">Toán</th>
+            <th style="width:15%">Lí</th>
+            <th style="width:15%">Hóa</th>
+            <th>Trung bình</th>
+        </tr>    
+    </table>
+
+    <br>
+
+    <button id="diemtb"><b>Tính điểm trung bình</b></button>
+    <button id="hsgioi"><b>Học sinh giỏi</b></button>
+    <button id="huy">Hủy</button>
+    <br><br>
+    <button id="delete">xóa hàng</button>
+    <input type="number" id="hang"> 
+
+    <script type="text/javascript" src="asm3.js"></script>
+</body>
+</html>

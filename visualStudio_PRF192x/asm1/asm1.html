@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Làm quen với Javascript</title>
+    <style>
+
+        html{
+            font-size: 20px;
+        }
+        
+        body{            
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            background-image: linear-gradient( to right, rgba(235, 190, 106, 0.726), rgba(183, 226, 63, 0.575), rgba(33, 168, 116, 0.938));
+        }
+        
+        .container{
+            width: auto;
+            height: auto;
+            margin: auto;
+        }
+
+        #demo{
+            font-size: 18px;
+            font-weight: 400;
+            color: yellow;
+            background-color:green;
+            border-radius: 7px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="name"></p>
+        <p id="city"></p>
+        <p id="mobile"></p>
+        <p id="age"></p>
+        <p id="email"></p>
+        <p id="job"></p>
+        <p id="favorite"></p>
+        
+        <button id="demo"></button>
+    </div>
+    
+    <script>
+
+        alert("Chào mừng đến với ứng dụng Javascript đầu tiên");//gọi Hàm thông báo
+        
+        var x=prompt("Nhập tên của bạn:",'');//Khai báo biến nhận giá trị của một hàm nhập prompt
+
+        //vòng lặp while nhằm lấy thông tin bắt buộc
+        while (x==null || x=="" || x.trim().length === 0) { 
+                    var x=prompt("Vui lòng nhập tên của bạn:",'');
+        }
+        
+        var y=prompt("Thành phố, tỉnh thành hiện tại bạn sinh sống:",'');
+         while (y==null || y=="" || y.trim().length === 0) {
+                    var y=prompt("Vui lòng nhập tên tỉnh, thành phố nơi bạn đang sống:",''); 
+        }
+        
+        var z=prompt("Số điện thoại của bạn:",'');
+         while (z==null || z=="" || z.trim().length === 0 || (z.match(/^[0-9]+$/) != null) === false) {
+                    var z=prompt("Vui lòng nhập số điện thoại hợp lệ:",''); 
+        }
+        
+        var yearNow = new Date().getFullYear();
+        var t=prompt("Năm sinh:",'');            
+        while (t>=yearNow || t=="" || t==null || t.trim().length === 0 || (t.match(/^[0-9]+$/) != null) === false) {
+            var t=prompt("Năm sinh không hợp lệ, vui lòng nhập lại:",'');     
+        }
+        
+        var a=prompt("Email của bạn:",'');
+        
+        var b=prompt("Công việc hiện tại:",'');
+        
+        var c=prompt("Sở thích:",'');
+        
+        //gán giá trị cho thuộc tính
+        document.getElementById("name").innerHTML= "Tên: " + "<b>" + x + "</b>";
+        document.getElementById("city").innerHTML= "Tỉnh thành: " + "<b>" + y + "</b>";
+        document.getElementById("mobile").innerHTML= "Số điện thoại: " + "<b>" + z + "</b>";
+        document.getElementById("age").innerHTML= "Tuổi: " + "<b>" + (yearNow-t) + "</b>";
+        document.getElementById("email").innerHTML= "Email liên hệ: " + "<b>" + a + "</b>";
+        document.getElementById("job").innerHTML= "Công việc hiện tại: " + "<b>" + b + "</b>";
+        document.getElementById("favorite").innerHTML= "Sở thích: " + "<b>" + c + "</b>";
+        
+       var m=document.getElementById("demo");
+       m.style.display="block";
+        document.getElementById("demo").innerHTML="Bước tiếp theo";
+
+    </script>
+
+</body>
+</html>
